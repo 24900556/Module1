@@ -1,27 +1,36 @@
-# Conditional Statements in Python: Even or Odd Checker
+# Conditional Statements in Python
 
 ## 🎯 Aim
 To write a Python program to check whether the given number is **even** or **odd** using `if...else` statements.
 
 ## 🧠 Algorithm
-1. Get an input from the user.
-2. Convert the input to an integer and store it in a variable `a`.
-3. Use the modulo operator `%` to check if `a % 2 == 0`.
-   - If true, print `"EVEN"`.
-   - Else, print `"ODD"`.
-4. End the program.
+Step 1: Input
+Read an integer a from the user.
+
+Step 2: Check Divisibility
+Use the modulus operator % to check if a % 9 == 0.
+
+If True, a is divisible by 9.
+
+If False, it is not divisible by 9.
+
+Step 3: Output
+Display a message based on the result of the check.
 
 ## 🧾 Program
-      num = int(input(""))
-      if num % 2 == 0:
-          print("EVEN")
-      else:
-          print("ODD")
+``` python
+a=int(input())
+if a%9==0:
+    print(a,"is divisible by 9")
+else:
+        print(a,"is NOT divisible by 9")
+```
 ## Output
-![Screenshot 2025-05-19 200354](https://github.com/user-attachments/assets/18d2d2fa-931d-4061-af6d-37028ce7e318)
-## Result
-Thus, the program is verified successfully.
 
+![image](https://github.com/user-attachments/assets/8f5cd46d-ee17-491d-b1f5-97db00c6942e)
+
+## Result
+Thus the python program to check whether the given input is divisible by 9 or not.
 
 # Ex 1:Datatypes-Boolean Expression Evaluation in Python
 
@@ -29,30 +38,32 @@ Thus, the program is verified successfully.
 To write a Python program that evaluates and prints the results of boolean and arithmetic expressions involving `True` and `False`.
 
 ## 🧠 Algorithm
-1. Set variable `a` to the result of the expression `0 == True`.
-2. Set variable `b` to the result of the expression `False == False`.
-3. Set variable `c` to the result of the expression `True + True`.
-4. Set variable `d` to the result of the expression `False + 9`.
-5. Print the value of `a` with the label "a is".
-6. Print the value of `b` with the label "b is".
-7. Print the value of `c` with the label "c:".
-8. Print the value of `d` with the label "d:".
+
+Step 1: Input
+Read string a from the user.
+
+Read string b from the user.
+
+Step 2: Comparison
+Use the == operator to check whether both strings are exactly the same (including case, whitespace, etc.).
+
+Step 3: Output
+Print True if a is equal to b, else print False.
 
 ## 💻 Program
-    a = (0 == True)
-    b = (False == False)
-    c = True + True
-    d = False + 9
-  
-    print("a is", a)
-    print("b is", b)
-    print("c:", c)
-    print("d:", d)
+``` python
+a=(input())
+b=(input())
+print((a == b))
+```
+
 ## Output
-![Screenshot 2025-05-19 200750](https://github.com/user-attachments/assets/2915f205-e723-4a8a-b7d8-f47a147b56e5)
+
+![image](https://github.com/user-attachments/assets/14e4027f-087f-4243-917e-282e1b2e7e1f)
 
 ## Result
-Thus, the program is verified successfully.
+
+Thus the python program to print the boolean value is executed successfully.
 
 # Datatypes-Character Literal in Python
 
@@ -64,14 +75,18 @@ To write a Python program that prints the characters `'T'` and `'a'` using chara
 2. Print the character `'a'`.
 
 ## 🧾 Program
-    print('T')
-    print('a')
+``` python
+v = 'T'
+w = "a"
+print(v)
+print(w)
 
+```
 ## Output
-![Screenshot 2025-05-19 200934](https://github.com/user-attachments/assets/f25a7874-97c3-4b04-a6ce-952fd2d880e8)
+![image](https://github.com/user-attachments/assets/db0a8de7-5f0c-499f-95ec-59c683de7cf4)
 
 ## Result
-Thus, the program is verified successfully.
+Thus the python program to print the character literal is executed successfully.
 
 # 🧮 Datatypes-Complex Number Creation in Python
 
@@ -87,18 +102,19 @@ To write a Python program that reads two integers, creates a complex number usin
 6. Print the imaginary part of `x` using `x.imag`.
 
 ## 💻 Program
-    a = int(input("Enter the real part: "))
-    b = int(input("Enter the imaginary part: "))
-    x = complex(a, b)
-    print("The complex number is:", x)
-    print("Real part:", x.real)
-    print("Imaginary part:", x.imag)
-
+``` python
+a=int(input())
+b=int(input())
+comp_num=complex(a,b)
+print(comp_num)
+print(comp_num.real)
+print(comp_num.imag)
+```
 ## Output
-![Screenshot 2025-05-19 201211](https://github.com/user-attachments/assets/8fafcce8-f14d-495c-ae35-22125d9944ed)
+![Screenshot 2025-05-22 175436](https://github.com/user-attachments/assets/924e54df-7851-4a42-98bb-cc4155ada47a)
 
 ## Result
-Thus, the program is verified successfully.
+Thus the python program to convert the real number into complex number is executed successfully.
 
 # Datatypes-Read and Print a String in Python
 
@@ -107,16 +123,16 @@ To write a Python program to read a string from the user and then print it.
 
 ## 🧠 Algorithm
 1. Assign a variable named `men_stepped_on_the_moon`.
-2. Use `input()` to read a string from the user and store it in the variable.
+2. Use `input()` to read a integer from the user and store it in the variable.
 3. Print the value stored in the variable.
 
 ## 🧾 Program
-    men_stepped_on_the_moon = input("Enter a sentence: ")
-    print(men_stepped_on_the_moon)
-
+``` python
+men_stepped_on_the_moon=int(input())
+print(men_stepped_on_the_moon)
+```
 ## Output
-![Screenshot 2025-05-19 201451](https://github.com/user-attachments/assets/6a4b29eb-f00f-499a-b8e7-e13fb162bb5c)
-
+![image](https://github.com/user-attachments/assets/965a06a5-d72a-4862-83d3-b78a166fb084)
 
 ## Result
-Thus, the program is verified successfully.
+Thus the python program to get the input from the user and print it executed successfully.
